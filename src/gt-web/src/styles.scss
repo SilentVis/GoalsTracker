@@ -1,1 +1,19 @@
+@use '@angular/material' as mat;
+@use './styles/themes/light';
+@use './styles/themes/dark';
+
+@include mat.core();
+
+@include mat.core-theme(light.$theme);
+@include mat.button-theme(light.$theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
