@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="start center">
+    <span>Goals tracker</span>
+    <span fxFlex></span>
+    <button
+      mat-icon-button
+      (click)="toggleDarkTheme()"
+      class="theme-toggle"
+      aria-label="Toggle Dark Theme">
+        <mat-icon>{{ isDark ? "dark_mode" : "light_mode" }}</mat-icon>
+      </button>
+</mat-toolbar>

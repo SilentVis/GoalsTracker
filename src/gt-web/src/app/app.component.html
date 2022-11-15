@@ -1,14 +1,6 @@
 <div>
-  <h1>Angular Material Theming System: Complete Guide</h1>
-  <button
-    mat-icon-button
-    (click)="toggleDarkTheme()"
-    class="theme-toggle"
-    aria-label="Toggle Dark Theme"
-  >
-    <mat-icon>{{ isDark ? "dark_mode" : "light_mode" }}</mat-icon>
-  </button>
-  <div class="demo-buttons">
+  <gt-app-toolbar></gt-app-toolbar>
+  <div class="row">
     <button mat-raised-button color="primary">Raised</button>
     <button mat-raised-button color="accent">Accent</button>
     <button mat-raised-button color="warn">Warn</button>
