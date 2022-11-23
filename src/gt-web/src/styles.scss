@@ -1,10 +1,9 @@
 @use '@angular/material' as mat;
-@use './styles/themes/light';
 @use './styles/themes/dark';
 
 @include mat.core();
 
-@include mat.all-component-themes(light.$theme);
+@include mat.all-component-themes(dark.$theme);
 
 /* You can add global styles to this file, and also import other style files */
 

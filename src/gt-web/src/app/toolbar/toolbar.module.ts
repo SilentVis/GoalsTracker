@@ -5,9 +5,6 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-
-
-
 @NgModule({
   declarations: [
     AppToolbarComponent
@@ -16,7 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     CommonModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
   ],
   exports:[
     AppToolbarComponent

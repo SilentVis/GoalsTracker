@@ -1,0 +1,17 @@
+<mat-card class="container" >
+  <mat-card color="accent" *ngFor="let goal of goals">
+    <mat-card-header>
+      <mat-card-title>
+        {{goal.title}}
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div>
+        {{goal.description}}
+      </div>
+      </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-flat-button color="accent">Complete</button>
+    </mat-card-actions>
+  </mat-card>
+</mat-card>

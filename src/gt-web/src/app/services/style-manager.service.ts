@@ -6,13 +6,13 @@ export class StyleManager {
 
   toggleDarkTheme() {
     if (this.isDark) {
-      this.removeStyle('dark-theme');
-      document.body.classList.remove('dark-theme');
+      this.removeStyle('light-theme');
+      document.body.classList.remove('light-theme');
       this.isDark = false;
     } else {
-      const href = 'dark-theme.css';
-      getLinkElementForKey('dark-theme').setAttribute('href', href);
-      document.body.classList.add('dark-theme');
+      const href = 'light-theme.css';
+      getLinkElementForKey('light-theme').setAttribute('href', href);
+      document.body.classList.add('light-theme');
       this.isDark = true;
     }
   }
