@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoalsListComponent implements OnInit {
 
+<<<<<<< HEAD
   goals: Goal[] = [
   {title:'test1', description: '23423423423423', progress: 10},
   {title:'test2', description: '23423423423423', progress: 30},
@@ -19,11 +20,14 @@ export class GoalsListComponent implements OnInit {
   {title:'test3', description: '23423423423423', progress: 60}
   ];
 
+=======
+>>>>>>> 9a7f788dc3d9b2b4b7621528222360fb30f89f77
   constructor() { }
 
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
 
 
 }
@@ -34,4 +38,6 @@ export interface Goal {
   title: string;
   description: string;
   progress: number;
+=======
+>>>>>>> 9a7f788dc3d9b2b4b7621528222360fb30f89f77
 }
