@@ -4,9 +4,13 @@ import { AddGoalComponent } from './add-goal/add-goal.component';
 import { GoalsListComponent } from './goals-list/goals-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule, MatLabel} from '@angular/material/form-field';
+import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatIconModule} from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input'
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes : Routes = [
   {
@@ -26,9 +30,14 @@ const routes : Routes = [
     RouterModule.forChild(routes),
     FormsModule,
 
+    FlexLayoutModule,
+
     MatCardModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDividerModule
   ]
 })
 export class GoalsListModule { }

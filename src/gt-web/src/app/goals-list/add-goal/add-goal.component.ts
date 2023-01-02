@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'gt-add-goal',
@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddGoalComponent implements OnInit {
 
-  value = 'Clear me';
+  @Output() submitGoal = new EventEmitter<string>();
+
+  value = '';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addGoal(){
+    this.submitGoal.emit(this.value);
+    this.value = '';
   }
 
 }

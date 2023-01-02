@@ -1,4 +1,11 @@
-.container{
-  width: 100%;
-  height: 50vh;
+.goal-card{
+  width: 200px;
+}
+
+.goal-card:hover{
+  box-shadow: 2px 3px 10px -2px rgba(0,0,0,0.8);
+}
+
+.goal-card-container{
+  padding: 16px;
 }

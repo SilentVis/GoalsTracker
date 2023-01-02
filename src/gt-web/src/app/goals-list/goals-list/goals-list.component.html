@@ -1,23 +1,22 @@
 <mat-card class="container">
 
-  <mat-card>
-    <gt-add-goal></gt-add-goal>
-  </mat-card>
+  <div>
+    <mat-card>
+      <h2>Add a new goal:</h2>
+      <gt-add-goal (submitGoal)="addGoal($event)"></gt-add-goal>
+    </mat-card>
+  </div>
+  <mat-divider></mat-divider>
 
+  <div class="goal-card-container">
+    <h2>Your goals:</h2>
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex.xs="100%" fxFlex.sm="33%" fxFlex="25%" *ngFor="let goal of goals">
+        <mat-card class="mat-elevation-z4">
+          <mat-card-header>{{goal.title}}</mat-card-header>
+        </mat-card>
+      </div>
+    </div>
+  </div>
 
-  <mat-card>
-    <mat-card-header>Some header</mat-card-header>
-  </mat-card>
-
-  <mat-card>
-    <mat-card-header>Some header</mat-card-header>
-  </mat-card>
-
-  <mat-card>
-    <mat-card-header>Some header</mat-card-header>
-  </mat-card>
-
-  <mat-card>
-    <mat-card-header>Some header</mat-card-header>
-  </mat-card>
 </mat-card>
