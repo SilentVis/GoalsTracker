@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddGoalComponent } from './add-goal/add-goal.component';
+import { Routes, RouterModule } from '@angular/router';
 import { GoalsListComponent } from './goals-list/goals-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
@@ -12,17 +12,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-const routes : Routes = [
+const routes: Routes = [
   {
-    path:'',
-    component: GoalsListComponent
+    path: '',
+    component : GoalsListComponent
   }
 ]
 
-
 @NgModule({
   declarations: [
-    AddGoalComponent,
     GoalsListComponent
   ],
   imports: [

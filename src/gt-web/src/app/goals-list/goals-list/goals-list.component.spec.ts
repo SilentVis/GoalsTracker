@@ -11,7 +11,9 @@ describe('GoalsListComponent', () => {
       declarations: [ GoalsListComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(GoalsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

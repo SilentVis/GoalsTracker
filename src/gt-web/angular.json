@@ -36,8 +36,8 @@
             "styles": [
               "src/styles.scss",
               {
-                "input": "src/styles/themes/_dark.scss",
-                "bundleName": "dark-theme",
+                "input": "src/styles/themes/_light.scss",
+                "bundleName": "light-theme",
                 "inject": false
               }
             ],
