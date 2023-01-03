@@ -21,9 +21,6 @@ Divider 1
 __________________________
 
 ```mermaid
----
-title: Graph top-to-down
----
 graph TD
  a --> b
  a --> c
@@ -45,9 +42,6 @@ Divider 2
 __________________________
 
 ```mermaid
----
-title: Same graph left-to-right
----
 graph LR
  a --> b
  a --> c
@@ -61,9 +55,6 @@ graph LR
 ___________________________
 
 ```mermaid
----
-title: Git graphs too
----
 %%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
       gitGraph
         commit
