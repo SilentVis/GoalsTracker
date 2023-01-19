@@ -6,7 +6,8 @@
     "start": "ng serve --port 4201 --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "gql-gen": "graphql-codegen"
   },
   "private": true,
   "dependencies": {
@@ -21,14 +22,24 @@
     "@angular/platform-browser": "^14.2.10",
     "@angular/platform-browser-dynamic": "^14.2.10",
     "@angular/router": "^14.2.10",
+    "@apollo/client": "^3.0.0",
+    "apollo-angular": "^4.2.0",
+    "graphql": "^16",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "undici": "^5.5.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.9",
     "@angular/cli": "^14.2.9",
     "@angular/compiler-cli": "^14.2.10",
+    "@graphql-codegen/cli": "^2.13.11",
+    "@graphql-codegen/fragment-matcher": "3.3.3",
+    "@graphql-codegen/near-operation-file-preset": "^2.4.4",
+    "@graphql-codegen/typescript": "^2.8.1",
+    "@graphql-codegen/typescript-apollo-angular": "^3.5.6",
+    "@graphql-codegen/typescript-operations": "^2.5.6",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",

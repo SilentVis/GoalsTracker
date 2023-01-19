@@ -1,0 +1,13 @@
+schema: http://127.0.0.1:5104/graphql
+documents: './src/**/*.graphql'
+generates:
+  src/app/types/gql-types.ts:
+    - typescript
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .gql-gen.ts
+      baseTypesPath: src/app/types/gql-types.ts
+    plugins:
+      - typescript-operations
+      - typescript-apollo-angular

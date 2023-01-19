@@ -7,6 +7,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes : Routes = [
   { path: 'goals', loadChildren: () => import('./goals-list/goals-list.module').then(g=>g.GoalsListModule) },
@@ -25,6 +27,8 @@ const routes : Routes = [
     ToolbarModule,
     RouterModule.forRoot(routes),
     MatToolbarModule,
+    GraphQLModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

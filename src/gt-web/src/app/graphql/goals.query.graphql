@@ -1,0 +1,5 @@
+query Goals(){
+  goals{
+    name
+  }
+}
