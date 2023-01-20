@@ -1,4 +1,4 @@
-query Goals(){
+query Goals{
   goals{
     name
   }
